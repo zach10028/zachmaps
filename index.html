@@ -1,74 +1,53 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Zachary Masson's Webpage</title>
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #787878;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #504caf;
-  color: white;
-}
-
-.header img {
-  float left;
-  width: 250px;
-  height: 250px;
-  background: #555
-}
-.header {
-  background-color: #ddd;
-  padding: 20px;
-  text-align: center;
-} 
-
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenLayers Web Map</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./libs/v6.5.0-dist/ol.css">
+    
 </head>
 <body>
+    <div class="header">
+        
+    </div>
 
-<div class="header">
-  <img src="PicCV.png" alt="PIC CV" />
-  <h1>Zachary Masson</h1>
-  <p>B.A. Human Environment Concordia University</p>
-  <p>DEC Liberal Arts Dawson College</p>
-</div>
+    <div class="row">
+        <div class="column" >
+            <div class = 'poi'>
+                <div> Click on a marker to see pictures.</div>
+                <h1 id = 'poi_name'> ... </h1>
+                
+                <div>
+                    <p id = 'poi_image1'> ...</p>
+                    <p> </p>
+                </div>
 
+                <div>
+                    <p id = 'poi_image2'> ...</p>
+                    <p> </p>
+                </div>
 
-<div class="topnav">
-  <a class="active" href="index.html">Personal and Contact Information</a>
-  <a href="">Education and Work</a>
-  
-</div>
+            </div>
 
+        </div>
+        <div class="column2" style="background-color:#bbb;">
+            <div id="js-map" class="map"></div>
+        </div>
+      </div>
 
-<h2>Personal Information and Contact Information</h2>
-<p>enter text here babyyyyyyy</p>
+    <div>
+        <div id="js-map" class="map"></div>
+    </div>
+    <footer>Footer</footer>
 
-
-<p>On this website you will find information on my academic and professional experience. There are also highlights that cover various other achievements</p>
-
+    <div class="overlay-container">
+        <span class = "overlay-text" id='name'></span><br>
+    </div>
+    <script src = './main.js'></script>
+    <script src="./libs/v6.5.0-dist/ol.js"></script>
+    <script src="https://cdn.maptiler.com/ol-mapbox-style/v5.0.2/olms.js"></script>
 
 </body>
 </html>
