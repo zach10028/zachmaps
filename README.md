@@ -1,2 +1,2 @@
-# ZacharyaMasson.github.io
+# ZacharyMasson.github.io
 Personal website
