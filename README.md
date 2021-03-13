@@ -1,2 +1,2 @@
-# ZacharyMasson.github.io
+# zachmaps.github.io
 Personal website
