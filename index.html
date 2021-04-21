@@ -1,0 +1,178 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MTL Then & Now</title>
+  <link rel="stylesheet" href="./libs/v6.0.0-dist/ol.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <script src="https://kit.fontawesome.com/c78f55289a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="grid-1">
+      <div class="column-navigation">
+        <a title='Home' id='Home' class='active'><i class="fas fa-home" id='Home'></i></a>
+        <a title='St Helens' id='2'><i class="far fa-circle" id='2'></i></a>
+        <a title='St Josephs Oratory' id='58'><i class="far fa-circle" id='58'></i></a>
+        <a title='Mt Stephen Ave' id='61'><i class="far fa-circle" id='61'></i></a>
+        <a title='Tanneries' id='60'><i class="far fa-circle" id='60'></i></a>
+        <a title='Atwater Park' id='50'><i class="far fa-circle" id='50'></i></a>
+        <a title='Forum' id='51'><i class="far fa-circle" id='51'></i></a>
+        <a title='Cote des Neiges' id='57'><i class="far fa-circle" id='57'></i></a>
+        <a title='Fort' id='53'><i class="far fa-circle" id='53'></i></a>
+        <a title='Dandurand House' id='33'><i class="far fa-circle" id='33'></i></a>
+        <a title='Grey Nuns' id='35'><i class="far fa-circle" id='35'></i></a>
+        <a title='Bagg House' id='55'><i class="far fa-circle" id='55'></i></a>
+        <a title='Redpath' id='63'><i class="far fa-circle" id='63'></i></a>
+        <a title='Peel' id='64'><i class="far fa-circle" id='64'></i></a>
+        <a title='McTavish' id='69'><i class="far fa-circle" id='69'></i></a>
+        <a title='Park' id='67'><i class="far fa-circle" id='67'></i></a>
+        <a title='Prince Arthur' id='65'><i class="far fa-circle" id='65'></i></a>
+        <a title='McGill University' id='70'><i class="far fa-circle" id='70'></i></a>
+        <a title='McGill Ave' id='52'><i class="far fa-circle" id='52'></i></a>
+
+        <a title="Place d'Armes" id='15'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Notre Dame West' id='20'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Notre Dame North' id='22'><i class="far fa-circle" id='POI'></i></a>
+        <a title='St Laurent' id='39'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Place Jacques Cartier' id='12'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Champ de Mars' id='14'><i class="far fa-circle" id='POI'></i></a>
+        <a title='St Paul' id='11'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Opening Day' id='4'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Skating on St Lawrence' id='5'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Place Royale' id='7'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Harbor Looking East' id='3'><i class="far fa-circle" id='POI'></i></a>
+        <a title="St Ann's Market" id='10'><i class="far fa-circle" id='POI'></i></a>
+        <a title='McGill Street' id='18'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Notre Dame Street' id='13'><i class="far fa-circle" id='POI'></i></a>
+        <a title='American Presbyterian Church' id='19'><i class="far fa-circle" id='POI'></i></a>
+        <a title='St James Street' id='16'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Victoria Square South' id='26'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Victoria Square North' id='25'><i class="far fa-circle" id='POI'></i></a>
+        <a title='St Lawrence Hall' id='17'><i class="far fa-circle" id='POI'></i></a>
+        <a title='St Urbain' id='38'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Cadieux' id='40'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Bleury' id='76'><i class="far fa-circle" id='POI'></i></a>
+        <a title='St James Methodist Church' id='45'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Morgans Department Store' id='49'><i class="far fa-circle" id='POI'></i></a>
+        <a title='St Catherine' id='48'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Square Phillips' id='47'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Union Ave' id='56'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Christ Church Cathedral' id='44'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Sherbrooke' id='54'><i class="far fa-circle" id='POI'></i></a>
+        <a title='St Catherine and Peel' id='46'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Mountain Street' id='43'><i class="far fa-circle" id='POI'></i></a>
+        <a title='St Margaret Street' id='32'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Windsor Station' id='30'><i class="far fa-circle" id='POI'></i></a>
+        <a title='Bonaventure Station' id='31'><i class="far fa-circle" id='POI'></i></a>
+        
+       
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="column-map" id='openlayers-map'></div>     
+    </div>
+
+    <div class="grid-3">
+      <div class="column-menu" id='menu-information'>
+
+        <p id='POIname'>Click on a marker and see how the location has changed with time</p>
+
+        <div class="slide-container">
+          <div class="slide fade">
+           <img src='data/static_image/logo.png' alt='' id = 'POIimage'>
+           <p id = 'POIyear1'>This map was made based on the book "Montreal Then and Now: Montréal Hier et Aujourdhui" by Bryan Demchinsky</p>
+           <p id = 'POIdesc1'>Click the Home button to refresh the map</p>
+         </div>
+         <div class="slide fade">
+           <img src='' alt='' id = 'POIimage2'>
+           <p id = 'POIyear2'></p>
+           <p id = 'POIdesc2'></p>
+         </div>
+         <div class="slide fade">
+           <img src='' alt='' id = 'POIimage3'>
+           <p id = 'POIyear3'></p>
+           <p id = 'POIdesc3'></p>           
+         </div>
+         <div class="slide fade">
+          <img src='' alt='' id = 'POIimage4'>
+          <p id = 'POIyear4'></p>
+          <p id = 'POIdesc4'></p>           
+        </div>
+   
+         <a href="#" class="prev" title="Previous">&#10094</a>
+         <a href="#" class="next" title="Next">&#10095</a>
+       </div>
+       <div class="dots-container">
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+       </div>
+      </div>
+    </div>
+
+    <!--<div class="overlay-container">
+      <span class = "overlay-text" id='name'></span><br>
+    </div> -->
+
+    <div class = "popover-information">
+      <p id = 'popover-text'></p>
+    </div>
+
+
+
+  
+  <div class="column-map" id='openlayers-map'></div>
+  <script src='./libs/v6.0.0-dist/ol.js'></script>
+  <script src='./main.js'></script>
+  <script src = './libs/proj4js/proj4.js'></script>
+  <script src = './libs/proj4js/proj4-src.js'></script>
+  <script>
+    var currentSlide = 0;
+    const slides = document.querySelectorAll(".slide")
+    const dots = document.querySelectorAll('.dot')
+
+    const init2 = (n) => {
+      slides.forEach((slide) => {
+        slide.style.display = "none"
+        dots.forEach((dot) => {
+          dot.classList.remove("active")
+        })
+      })
+      slides[n].style.display = "block"
+      dots[n].classList.add("active")
+    }
+    document.addEventListener("DOMContentLoaded", init2(currentSlide))
+
+    const next = () => {
+        currentSlide >= slides.length - 1 ? currentSlide = 0 : currentSlide++
+        init2(currentSlide)
+      }
+      
+    const prev = () => {
+        currentSlide <= 0 ? currentSlide = slides.length - 1 : currentSlide--
+        init2(currentSlide)
+      }
+      
+    document.querySelector(".next").addEventListener('click', next)
+    document.querySelector(".prev").addEventListener('click', prev)
+
+    i =currentSlide;
+      
+    dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          init2(index)
+          currentSlide = i
+        })
+      })
+  </script>
+</body>
+
+</html>

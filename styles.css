@@ -1,0 +1,408 @@
+*{
+    box-sizing: border-box
+}
+body{
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    background-color: #e2cbcb;
+}
+.grid-container{
+    display:grid;
+    grid-template-columns: 4vw 50vw 46vw;
+    grid-template-rows: 100vh;
+}
+.grid-1{
+    height: 100%;
+    width: 100%;
+    background-color: #555;
+} 
+
+
+.grid-2{
+    height:100%;
+    width: 100%;
+}
+.grid-3{
+    height:100%;
+    width:100%;
+}
+.column-navigation a{
+    display:block;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    width: 50%;
+    float: left;
+    padding: 5px 0; 
+}
+.column-navigation a:hover{
+    background-color: black;
+}
+
+
+.active{
+    background-color: #E6753C;
+}
+.column-menu{
+    height: 100%;
+    width: 100%;
+    padding: 1px;
+    background-color: #e2cbcb;
+}
+#POIname{
+    margin:0;
+    padding: 10px;
+    width: 100%;
+
+    text-align:center;
+    font-size: 28px;
+}
+#POIdesc1{
+  font-size: 14px;
+  text-align: center;
+}
+#POIdesc2{
+  font-size: 14px;
+  text-align: center;
+}
+#POIdesc3{
+  font-size: 14px;
+  text-align: center;
+}
+#POIdesc4{
+  font-size: 14px;
+  text-align: center;
+}
+#POIyear1{
+  font-size: 14px;
+  text-align: center;
+}
+#POIyear2{
+  font-size: 14px;
+  text-align: center;
+}
+#POIyear3{
+  font-size: 14px;
+  text-align: center;
+}
+#POIyear4{
+  font-size: 14px;
+  text-align: center;
+}
+
+
+@keyframes fade {
+0% {
+    opacity: 0;
+}
+
+100% {
+    opacity: 1;
+}
+}
+
+* {
+padding: 0;
+border: 0;
+box-sizing: border-box;
+}
+
+
+
+body h1 {
+text-align: center;
+}
+
+.slide-container {
+display: flex;
+justify-content: center;
+align-items: center;
+max-width: 100%;
+margin: auto;
+position: relative;
+}
+
+.slide-container img{
+    width: 100%;
+    height: auto;
+    position: center;
+}
+
+
+.slide-container .slide {
+display: none;
+width: 100%;
+}
+
+.slide-container .slide.fade {
+animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.slide-container .slide img {
+width: 500px;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.slide-container .prev,
+.slide-container .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+transition: all 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+.slide-container .prev:hover,
+.slide-container .next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+color: white;
+}
+
+.slide-container .prev {
+left: 2px;
+}
+
+.slide-container .next {
+right: 2px;
+}
+
+.dots-container {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+}
+
+.dots-container .dot {
+cursor: pointer;
+margin: 5px;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: #545455;
+}
+
+.dots-container .dot.active {
+border: 2px solid rgb(255, 255, 255);
+background-color: #545455;
+}
+
+
+
+
+#popover-text{
+  background-color: rgb(82, 82, 82);
+  color:rgb(255, 255, 255);
+  font-size: 13px;
+  padding: 2px;
+}
+
+@media screen and (max-width: 1024px){
+  .slide-container .slide img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+  #POIname{
+    font-size: 28px;
+  }
+
+  #POIdesc1{
+    font-size: 14px;
+    text-align: center;
+  }
+  #POIdesc2{
+    font-size: 14px;
+    text-align: center;
+  }
+  #POIdesc3{
+    font-size: 14px;
+    text-align: center;
+  }
+  #POIdesc4{
+    font-size: 14px;
+    text-align: center;
+  }
+  #POIyear1{
+    font-size: 14px;
+    text-align: center;
+  }
+  #POIyear2{
+    font-size: 14px;
+    text-align: center;
+  }
+  #POIyear3{
+    font-size: 14px;
+    text-align: center;
+  }
+  #POIyear4{
+    font-size: 14px;
+    text-align: center;
+  }
+
+}
+  
+@media screen and (max-width: 768px){
+  .grid-container{
+    grid-template-columns: auto;
+    grid-template-rows: 5vh 50vh 45vh;
+  }
+
+  .column-navigation{
+    position: relative;
+    transform: translateY(-50%);
+    text-align: left;
+  }
+
+  .column-navigation a{
+    display:block;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    width: 5%;
+    height: 30%;
+    float: left;
+    padding: 5px 5px;}
+
+  #POIname{
+    height: 5%;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .slide-container .slide img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    }
+    #POIdesc1{
+      font-size: 12px;
+      text-align: center;
+    }
+    #POIdesc2{
+      font-size: 10px;
+      text-align: center;
+    }
+    #POIdesc3{
+      font-size: 10px;
+      text-align: center;
+    }
+    #POIdesc4{
+      font-size: 10px;
+      text-align: center;
+    }
+    #POIyear1{
+      font-size: 10px;
+      text-align: center;
+    }
+    #POIyear2{
+      font-size: 10px;
+      text-align: center;
+    }
+    #POIyear3{
+      font-size: 10px;
+      text-align: center;
+    }
+    #POIyear4{
+      font-size: 10px;
+      text-align: center;
+    }
+  }
+
+  
+@media screen and (max-width: 340px){
+  .grid-container{
+    grid-template-columns: auto;
+    grid-template-rows: 3vh 50vh 45vh;
+  }
+
+  .column-navigation a {
+    font-size: 10px;
+    padding: 2px
+  }
+
+  #POIname{
+    height: 20%;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .slide-container .slide img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  
+  
+  #POIdesc1{
+    height: 20%;
+    padding: 15px;
+    text-align: center;
+    font-size: 10px;
+  }
+  #POIdesc2{
+    height: 20%;
+    padding: 15px;
+    text-align: center;
+    font-size: 10px;
+  }
+  #POIdesc3{
+    height: 20%;
+    padding: 15px;
+    text-align: center;
+    font-size: 10px;
+  }
+  #POIdesc4{
+    height: 20%;
+    padding: 15px;
+    text-align: center;
+    font-size: 10px;
+  }
+  #POIyear1{
+    height: 20%;
+    padding: 15px;
+    text-align: center;
+    font-size: 10px;
+  }
+  #POIyear2{
+    height: 20%;
+    padding: 15px;
+    text-align: center;
+    font-size: 10px;
+  }
+  #POIyear3{
+    height: 20%;
+    padding: 15px;
+    text-align: center;
+    font-size: 10px;
+  }
+  #POIyear4{
+    height: 20%;
+    padding: 15px;
+    text-align: center;
+    font-size: 10px;
+  }
+}
+
